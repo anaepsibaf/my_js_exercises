@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var nOne, nTwo, res, temp;
+            function fun1()
+            {
+                nOne=parseInt(document.getElementById("one").value);
+                nTwo=parseInt(document.getElementById("two").value);
+                if(nOne!==undefined && nTwo!==undefined)
+                {
+                    temp=document.getElementById("res");
+                    temp.style.display="block";
+                    res=nOne+nTwo;
+                    document.getElementById("add").value=res;
+                }
+            }
+            function fun2()
+            {
+                nOne=parseInt(document.getElementById("one").value);
+                nTwo=parseInt(document.getElementById("two").value);
+                if(nOne!==undefined && nTwo!==undefined)
+                {
+                    temp=document.getElementById("res");
+                    temp.style.display="block";
+                    res=nOne-nTwo;
+                    document.getElementById("subtract").value=res;
+                }
+            }
+            function fun3()
+            {
+                nOne=parseInt(document.getElementById("one").value);
+                nTwo=parseInt(document.getElementById("two").value);
+                if(nOne!==undefined && nTwo!==undefined)
+                {
+                    temp=document.getElementById("res");
+                    temp.style.display="block";
+                    res=nOne*nTwo;
+                    document.getElementById("multiply").value=res;
+                }
+            }
+            function fun4()
+            {
+                nOne=parseInt(document.getElementById("one").value);
+                nTwo=parseInt(document.getElementById("two").value);
+                if(nOne!==undefined && nTwo!==undefined)
+                {
+                    temp=document.getElementById("res");
+                    temp.style.display="block";
+                    res=nOne/nTwo;
+                    document.getElementById("division").value=res;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <p id="input">Number 1:<input id="one"></p><br/>
+        Number 2:<input id="two"></p>
+        <p> <button onclick="fun1()">ADD</button></p>
+        <p id="res" style="display: none;"></p>
+        Addition of Number 1 and Number 2 = <input id="add">
+        <p> <button onclick="fun2()">SUBTRACT</button></p>
+        <p id="res" style="display: none;"></p>
+        Subtraction of Number 1 and Number 2 = <input id="subtract"><br/><p id="input"></p>
+        <p> <button onclick="fun3()">MULTIPLY</button></p>
+        <p id="res" style="display: none;"></p>
+        Multiplication of Number 1 and Number 2 = <input id="multiply"><br/><p id="input"></p>
+        <p> <button onclick="fun4()">DIVISION</button></p>
+        <p id="res" style="display: none;"></p>
+        Division of Number 1 and Number 2 = <input id="division">
+    </body>
+</html>
